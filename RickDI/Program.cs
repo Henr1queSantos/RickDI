@@ -11,7 +11,7 @@ builder.Services.AddTransient<IOperationTransient, Operation>();
 // Scoped: DbContext should be new for each request
 builder.Services.AddScoped<IOperationScoped, Operation>();
 
-// Singleton: LoggerService should be shared across the application 
+// Singleton: LoggerService should be shared across the application  
 builder.Services.AddSingleton<IOperationSingleton, Operation>(); 
 
 var app = builder.Build();
